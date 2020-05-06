@@ -1,2 +1,2 @@
 # RockPaperScissors
-bruh, that lonely ya want to play with a bot? ok
+challenge from this YTvideo, must watch! https://www.youtube.com/watch?v=Qqx_wzMmFeA&t=10218s
