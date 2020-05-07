@@ -1,16 +1,13 @@
-//Challenge 3: Rock, Paper, Scissors
+// YOU WILL ALWAYS LOSE NO MATTER WHAT.
 
 // when clicking an image, you inizialize this game
 function rpsGame(humanChoice) {
   const yourChoice = humanChoice.id;
-  const computerChoice = randomComputerGuess();
+  const computerChoice = ComputerGuess(yourChoice);
 
   //  [0 , 1]  human lost | computer won
-  //  [1 , 0]  human won | computer lost
   const results = decideWinner(yourChoice, computerChoice);
 
-  //  { message: "You Won", color: "green" }       [1 , 0]
-  //  { message: "You Tied", color: "yellow" }   [0.5 , 0.5]
   //  { message: "You Lost", color: "red" }        [0 , 1]
   const message = finalMessage(results);
 
@@ -19,11 +16,14 @@ function rpsGame(humanChoice) {
 }
 
 // this f() returns (with equal possibilities) a random string between "rock", "paper" and "scissors"
-function randomComputerGuess() {
-  const picks = ["rock", "paper", "scissors"];
-  // rndmNum is an integer between 0,1 and 2.
-  const rndmNum = Math.floor(Math.random() * 3);
-  return picks[rndmNum];
+function ComputerGuess(yourChoice) {
+  if (yourChoice === "rock") {
+    return "paper";
+  } else if (yourChoice === "paper") {
+    return "scissors";
+  } else {
+    return "rock";
+  }
 }
 
 // this f() receives the input from the user and the random pick from the computer
