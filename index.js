@@ -1,4 +1,4 @@
-// YOU WILL ALWAYS LOSE NO MATTER WHAT.
+// YOU WILL ALWAYS WIN NO MATTER WHAT.
 
 // when clicking an image, you inizialize this game
 function rpsGame(humanChoice) {
