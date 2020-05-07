@@ -5,10 +5,10 @@ function rpsGame(humanChoice) {
   const yourChoice = humanChoice.id;
   const computerChoice = ComputerGuess(yourChoice);
 
-  //  [0 , 1]  human lost | computer won
+  //  [1 , 0]  human won | computer lost
   const results = decideWinner(yourChoice, computerChoice);
 
-  //  { message: "You Lost", color: "red" }        [0 , 1]
+  //  { message: "You won", color: "green" }        [1 , 0]
   const message = finalMessage(results);
 
   // handling the graphic part
@@ -16,6 +16,7 @@ function rpsGame(humanChoice) {
 }
 
 // this f() returns (with equal possibilities) a random string between "rock", "paper" and "scissors"
+// NO actually it doesn't
 function ComputerGuess(yourChoice) {
   if (yourChoice === "rock") {
     return "scissors";
