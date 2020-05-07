@@ -1,2 +1,2 @@
 # RockPaperScissors
-bruh, that lonely ya want to play with a bot? ok
+you will always win no matter what.
