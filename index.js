@@ -18,11 +18,11 @@ function rpsGame(humanChoice) {
 // this f() returns (with equal possibilities) a random string between "rock", "paper" and "scissors"
 function ComputerGuess(yourChoice) {
   if (yourChoice === "rock") {
-    return "paper";
-  } else if (yourChoice === "paper") {
     return "scissors";
-  } else {
+  } else if (yourChoice === "paper") {
     return "rock";
+  } else {
+    return "paper";
   }
 }
 
