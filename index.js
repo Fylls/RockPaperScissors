@@ -19,6 +19,7 @@ function rpsGame(humanChoice) {
 }
 
 // this f() returns (with equal possibilities) a random string between "rock", "paper" and "scissors"
+// NO actually it doesn't
 function randomComputerGuess() {
   const picks = ["rock", "paper", "scissors"];
   // rndmNum is an integer between 0,1 and 2.
