@@ -1,5 +1,3 @@
-//Challenge 3: Rock, Paper, Scissors
-
 // when clicking an image, you inizialize this game
 function rpsGame(humanChoice) {
   const yourChoice = humanChoice.id;
