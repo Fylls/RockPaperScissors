@@ -60,8 +60,10 @@ function decideWinner(yourChoice, computerChoice) {
 function finalMessage([yourScore, computerScore]) {
   if (yourScore === 0) {
     return { message: "You Lost", color: "red" };
+    
   } else if (yourScore === 0.5) {
     return { message: "You Tied", color: "yellow" };
+    
   } else {
     return { message: "You Won", color: "green" };
   }
