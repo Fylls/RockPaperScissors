@@ -19,9 +19,10 @@ function rpsGame(humanChoice) {
 
 // this f() returns (with equal possibilities) a random string between "rock", "paper" and "scissors"
 function randomComputerGuess() {
-  const picks = ["rock", "paper", "scissors"];
   // rndmNum is an integer between 0,1 and 2.
   const rndmNum = Math.floor(Math.random() * 3);
+  const picks = ["rock", "paper", "scissors"];
+  
   return picks[rndmNum];
 }
 
